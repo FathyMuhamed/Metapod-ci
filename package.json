@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "netlify deploy --dir=./build -p -m 'git log -1 --pretty=%B'"
   },
   "dependencies": {
     "@prisma/client": "^3.11.1",
@@ -22,6 +23,7 @@
     "autoprefixer": "^10.4.4",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.2",
+    "netlify-cli": "^10.4.0",
     "postcss": "^8.4.12",
     "prisma": "^3.11.1",
     "tailwindcss": "^3.0.23",
